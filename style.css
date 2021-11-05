@@ -1,0 +1,17 @@
+
+
+.answer-container {
+    align-items: center;
+    background-color: gray;
+}
+
+.question-container{
+    background-color: green;
+}
+#all-questions-container {
+    background-color: pink;
+}
+.qa-container {
+    margin: 10ch;
+    
+}
