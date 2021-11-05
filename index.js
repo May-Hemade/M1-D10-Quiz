@@ -143,8 +143,24 @@ const onAnswerSelected = function (eventData) {
   console.log(userAnswers)
 }
 
+const userScore = function (){
+    let total = 0
+  for ( let i=0; i<questions.length; i++){
+     let currentAnswer =  userAnswers[i] 
+     if ( currentAnswer ===questions[i].correct_answer){
+        total++
+     }
+  } 
+  return total 
+}
+
+const displayScore = function (){ 
+    let scoreNode = document.getElementById("score")
+    scoreNode.innerText= userScore()  
+}
 window.onload = function () {
   displayQuestions()
+
   // HINTS
   // IF YOU ARE DISPLAYING ALL THE QUESTIONS AT ONCE:
   // For each question, create a container for wrapping it; then create a radio button
